@@ -1,0 +1,93 @@
+*, *::after, *::before {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    font-size: 18px;
+}
+
+body {
+    background: #3e4444;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.container {
+    max-width: 900px;
+    width: 40%;
+}
+
+.content {
+    background-color: #fff;
+    padding: 3em 2em;
+    border-radius: .5em;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.general-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.status {
+    font-weight: 600;
+    font-size: 36px;
+    text-align: center;
+}
+
+.location {
+    font-size: 22px;
+    color: #333;
+}
+
+.detail-section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 1.2em 0;
+    width: 100%;
+}
+
+.detail {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex-grow: 1;
+    border-left: 1px solid #333;
+}
+
+.detail:first-child {
+    border: none;
+}
+
+.detail .title {
+    font-weight: 600;
+    margin-bottom: .5em;
+}
+
+.value {
+    color: #333;
+}
+
+.search-container {
+    margin: 1em 0;
+}
+
+.city-search, .search-container button {
+    padding: 0.5em 1em;
+    border: 2px solid #333;
+    border-radius: .4em;
+    outline: none;
+}
+
+.search-container button {
+    cursor: pointer;
+}
